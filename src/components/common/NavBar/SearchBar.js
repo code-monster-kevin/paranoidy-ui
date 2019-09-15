@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 import './SearchBar.css';
 
 function searchbar(props) {
@@ -15,17 +15,16 @@ function searchbar(props) {
       </button>
     </form>
   );
-};
+}
 
-searchbar.PropTypes = {
+searchbar.propTypes = {
   placeholder: PropTypes.string.isRequired,
   button: PropTypes.string.isRequired
 };
 
 searchbar.defaultProps = {
-  placeholder: "Search",
-  button: "Search"
+  placeholder: 'Search',
+  button: 'Search'
 };
-
 
 export default searchbar;

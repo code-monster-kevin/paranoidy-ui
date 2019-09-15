@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
 function dropdownmenu(props) {
   return (
@@ -20,9 +20,9 @@ function dropdownmenu(props) {
       </div>
     </li>
   );
-};
+}
 
-dropdownmenu.PropTypes = {
+dropdownmenu.propTypes = {
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired
 };

@@ -1,0 +1,7 @@
+.card {
+  color: darkblue !important;
+}
+
+.card-body p {
+  font-size: 10em !important;
+}

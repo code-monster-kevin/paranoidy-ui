@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 import './Jumbotron.css';
 
 const jumbotron = props => {
@@ -18,7 +18,7 @@ const jumbotron = props => {
   );
 };
 
-jumbotron.PropTypes = {
+jumbotron.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,

@@ -1,16 +1,15 @@
 import React from 'react';
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
-const dropdownitem = props => {
+function dropdownitem(props) {
   return (
     <a className="dropdown-item" href={props.link}>
-      {props.name}
+      {props.children}
     </a>
   );
-};
+}
 
-dropdownitem.PropTypes = {
-  name: PropTypes.string.isRequired,
+dropdownitem.propTypes = {
   link: PropTypes.string.isRequired
 };
 
