@@ -1,3 +1,4 @@
 .topnavbar {
-  font-size: 12px;
+  background-color: #263238 !important;
+  background-image: linear-gradient(-90deg, #263238, #455a64, #607d8b);
 }

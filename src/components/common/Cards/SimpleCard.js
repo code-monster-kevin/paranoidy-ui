@@ -6,13 +6,17 @@ function simplecard(props) {
   return (
     <div className="card shadow">
       <img className="card-img-top" src={props.image} alt={props.imgAlt} />
-      <div className="card-body">
+      <div className="card-body text-capitalize">
         <h4 className="card-title">{props.title}</h4>
         <h6 className="card-subtitle">{props.subtitle}</h6>
-        <p>{props.description}</p>
-        <a href={props.link} className="btn btn-info">
-          {props.button}
-        </a>
+        <p>
+          <small>{props.description}</small>
+        </p>
+        <div className="card-footer">
+          <a href={props.link} className="btn btn-info">
+            {props.button}
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ function breadcrumb(props) {
           <BreadcrumbItem link="/" name="Home" />
           <BreadcrumbItem link="/" name="Category 1" />
           <BreadcrumbItem link="/" name="Subcategory 1" />
-          <BreadcrumbItem link="/" name="Product A" isCurrentPage="true" />
+          <BreadcrumbItem link="/" name="Product A" isCurrentPage={true} />
         </ol>
       </nav>
     </div>

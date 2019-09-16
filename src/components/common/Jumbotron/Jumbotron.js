@@ -1,29 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import JumbotronImage from '../../../assets/img/jumbotron_image1.jpg';
 import './Jumbotron.css';
 
-const jumbotron = props => {
+function jumbotron(props) {
   return (
-    <div className="jumbotron JumbotronStyle">
-      <h1 className="display-3">{props.title}</h1>
-      <p className="lead">{props.subtitle}</p>
+    <div
+      className="jumbotron"
+      style={{
+        backgroundImage: `url(${JumbotronImage})`
+      }}
+    >
+      <h1 className="display-3 text-capitalize">{props.title}</h1>
+      <p className="lead text-capitalize">{props.subtitle}</p>
       <hr className="m-y-2" />
-      <p>{props.description}</p>
-      <p className="lead">
-        <a className="btn btn-primary btn-lg" href={props.link} role="button">
-          {props.button}
-        </a>
-      </p>
+      {props.children}
     </div>
   );
-};
+}
 
 jumbotron.propTypes = {
   title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired,
-  button: PropTypes.string.isRequired
+  subtitle: PropTypes.string.isRequired
 };
 
 export default jumbotron;

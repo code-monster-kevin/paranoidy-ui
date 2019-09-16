@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function dropdownitem(props) {
   return (
-    <a className="dropdown-item" href={props.link}>
+    <a className="dropdown-item text-capitalize" href={props.link}>
       {props.children}
     </a>
   );

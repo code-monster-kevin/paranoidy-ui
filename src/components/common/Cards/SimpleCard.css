@@ -1,7 +1,4 @@
 .card {
-  color: darkblue !important;
-}
-
-.card-body p {
-  font-size: 10em !important;
+  color: black !important;
+  background-color: #cfd8dc !important;
 }

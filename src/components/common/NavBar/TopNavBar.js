@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faHome } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import PropTypes from 'prop-types';
 import './TopNavBar.css';
 
@@ -12,7 +12,7 @@ function topnavbar(props) {
     >
       <div className="container">
         <a className="navbar-brand js-scroll-trigger" href={props.homelink}>
-          <FontAwesomeIcon icon={faHome} /> {props.brand}
+          <img src={props.logo} alt={props.brand} /> {props.brand}
         </a>
         <button
           className="navbar-toggler navbar-toggler-right"
@@ -37,6 +37,7 @@ function topnavbar(props) {
 
 topnavbar.propTypes = {
   id: PropTypes.string.isRequired,
+  logo: PropTypes.string.isRequired,
   homelink: PropTypes.string.isRequired,
   brand: PropTypes.string.isRequired,
   theme: PropTypes.string.isRequired

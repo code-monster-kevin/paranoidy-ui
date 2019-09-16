@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function navitem(props) {
   return (
-    <li className="nav-item">
+    <li className="nav-item text-capitalize">
       <a className="nav-link js-scroll-trigger" href={props.link}>
         {props.children}
       </a>
